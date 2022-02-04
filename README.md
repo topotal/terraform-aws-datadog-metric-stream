@@ -70,6 +70,7 @@ No modules.
 | <a name="input_datadog_api_key"></a> [datadog\_api\_key](#input\_datadog\_api\_key) | The API Key for Datadog | `string` | n/a | yes |
 | <a name="input_datadog_firehose_endpoint"></a> [datadog\_firehose\_endpoint](#input\_datadog\_firehose\_endpoint) | Datadog Kinesis Firehose Endpoint | `string` | `"https://awsmetrics-intake.datadoghq.com/v1/input"` | no |
 | <a name="input_kinesis_firehose_delivery_stream_name"></a> [kinesis\_firehose\_delivery\_stream\_name](#input\_kinesis\_firehose\_delivery\_stream\_name) | The name of Kinesis Firehose | `string` | `"datadog"` | no |
+| <a name="input_metric_stream_namespace_list"></a> [metric\_stream\_namespace\_list](#input\_metric\_stream\_namespace\_list) | The list of the namespaces for CloudWatch Metric Stream | `list(string)` | `[]` | no |
 | <a name="input_s3_bucket_backup_prefix"></a> [s3\_bucket\_backup\_prefix](#input\_s3\_bucket\_backup\_prefix) | The prefix of the S3 bucket for backup | `string` | `"metrics/"` | no |
 | <a name="input_s3_bucket_firehose_backup"></a> [s3\_bucket\_firehose\_backup](#input\_s3\_bucket\_firehose\_backup) | The name of the S3 bucket for backup | `string` | n/a | yes |
 
