@@ -2,6 +2,22 @@
 
 Terraform module for creating required AWS resources to support Datadog [AWS CloudWatch Metric Streams with Kinesis Data Firehose](https://docs.datadoghq.com/integrations/guide/aws-cloudwatch-metric-streams-with-kinesis-data-firehose/?tab=cloudformation)
 
+https://registry.terraform.io/modules/topotal/datadog-metric-stream/aws/latest
+
+## Usage
+
+Copy and paste into your Terraform configuration, insert the variables, and run terraform init:
+
+```
+module "datadog-metric-stream" {
+  source  = "topotal/datadog-metric-stream/aws"
+  version = "0.1.0"
+
+  datadog_api_key           = "YOUR_DATADOG_API_KEY"
+  s3_bucket_firehose_backup	= "EXAMPLE_S3_BUCKET_NAME_FOR_FIREHOSE_BACKUP"
+}
+```
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
