@@ -81,3 +81,9 @@ variable "s3_bucket_backup_prefix" {
   default     = "metrics/"
   description = "The prefix of the S3 bucket for backup"
 }
+
+variable "metric_stream_namespace_list" {
+  type        = list(string)
+  default     = []
+  description = "The list of the namespaces for CloudWatch Metric Stream"
+}
