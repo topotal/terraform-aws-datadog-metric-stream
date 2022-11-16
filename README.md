@@ -11,7 +11,7 @@ Copy and paste into your Terraform configuration, insert the variables, and run 
 ```
 module "datadog-metric-stream" {
   source  = "topotal/datadog-metric-stream/aws"
-  version = "0.1.0"
+  version = "0.2.1"
 
   datadog_api_key           = "YOUR_DATADOG_API_KEY"
   s3_bucket_firehose_backup	= "EXAMPLE_S3_BUCKET_NAME_FOR_FIREHOSE_BACKUP"
@@ -24,13 +24,13 @@ module "datadog-metric-stream" {
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0.0 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 3.74.0 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 3.74.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | ~> 3.74.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 3.74.0 |
 
 ## Modules
 
